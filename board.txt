@@ -1,0 +1,17 @@
+WEB API
+addEventListerner
+localstorage
+fetch
+setimeout
+
+
+NODE
+js => servidor (terminal)
+
+
+FRONT END (JS en el cliente)
+JS + WEB API
+
+
+BACK END (JS por medio de node en el servidor)
+JS + NODE

@@ -1,0 +1,3 @@
+Del ejercicio de consumo de api de hacer un GET a la pokeapi, 
+construir la interfaz web que pinte  las tarjetas con el nombre 
+y la imagen de c/pokemon

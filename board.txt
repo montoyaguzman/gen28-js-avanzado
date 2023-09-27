@@ -15,3 +15,10 @@ JS + WEB API
 
 BACK END (JS por medio de node en el servidor)
 JS + NODE
+
+5 conceptos indispensables de APIS
+request
+response
+url
+verbo/method HTTP (GET, POST, PUT, PATCH, DELETE)
+status (200 OK, 404 NOT FOUND, 500 ERROR SERVIDOR)

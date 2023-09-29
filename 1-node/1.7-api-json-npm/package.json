@@ -1,0 +1,17 @@
+{
+  "name": "api-json",
+  "version": "1.0.0",
+  "description": "mi primer proyecto de node hacia npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "montoyitag-devf",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "nodemon": "^3.0.1"
+  }
+}

@@ -22,3 +22,33 @@ response
 url
 verbo/method HTTP (GET, POST, PUT, PATCH, DELETE)
 status (200 OK, 404 NOT FOUND, 500 ERROR SERVIDOR)
+
+
+SEMANTIC VERSION
+
+colors: 1.0.0
+color: 2.0.0
+
+
+
+JUEGO HALO
+
+DEPENDENCIAS
+armas 1.0.0
+blender 1.0.0
+
+DESARROLLANDO
+Partidas
+
+1.0.0
+    DEPENDENCIAS
+    armas ^1.0.0
+    blender ^1.x.y
+
+1.0.0
+1.0.1 // fix de las armas y grandas
+1.0.2 // fix de los colores
+1.1.0 // agregar arcos como arma
+2.0.0 // reinventar el uso de armas para tener una jugabilidad mas agradable
+2.0.1
+2.1.0

@@ -65,3 +65,7 @@ npm vs yarn
 
 Java
 maven vs gradlew
+
+script => JS
+link => CSS
+js puro => require

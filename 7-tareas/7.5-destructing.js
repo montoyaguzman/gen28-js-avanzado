@@ -1,0 +1,1 @@
+Investigar que es destructuring y ejemlos

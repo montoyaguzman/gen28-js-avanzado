@@ -1,22 +1,4 @@
 const http = require('http');
-const colors = require('colors');
-
-const server = http.createServer((request, response) => {
-    const status = 200; // OK
-    const mimeType = { 'Content-Type' : 'text/html' };
-    response.writeHead(status, mimeType);
-    response.write('<html> <body> Hola shavos de js avanzado en devf! </body> </html>');
-    response.end();
-});
-
-server.listen(8000);
-console.log('el servidor fue iniciado...');
-console.log('OMG Rainbows!'.rainbow); 
-/*
- // PETICIONES
-// localhost:8080/index.html
-
-const http = require('http');
 const url = require('url');
 const fs = require('fs');
 const colors = require('colors');
@@ -50,6 +32,10 @@ const server = http.createServer((request, response) => {
         fileSytemPath = `static${path}`
     }
     console.log(`Path solicitada: `, fileSytemPath);
+
+    fs.stat 
+    fs.readFile
+    // asincronia
 
     // Paso 4: Validar si existe la path en el sistema
     fs.stat(fileSytemPath, error => {
@@ -93,5 +79,3 @@ const server = http.createServer((request, response) => {
 server.listen(9000);
 console.log('API en node...'.rainbow);
 console.log('Esperando peticiones....'.yellow);
-
-*/

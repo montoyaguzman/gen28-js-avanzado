@@ -28,7 +28,7 @@ SEMANTIC VERSION
 
 colors: 1.0.0
 color: 2.0.0
-
+=
 
 
 JUEGO HALO
@@ -52,3 +52,16 @@ Partidas
 2.0.0 // reinventar el uso de armas para tener una jugabilidad mas agradable
 2.0.1
 2.1.0
+
+
+DUDAS DE SUS TAREAS?
+REPASO PRACTICO
+
+Postman
+App.js
+
+Node
+npm vs yarn
+
+Java
+maven vs gradlew

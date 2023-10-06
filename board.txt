@@ -69,3 +69,18 @@ maven vs gradlew
 script => JS
 link => CSS
 js puro => require
+
+
+OPERACIONES DEPENDIENTES
+
+JAVA y Python
+1. Controlan automaticamente el orden.
+2. El codigo bloqueante.
+3. Threads
+
+JavaScript
+1. Nativamente no bloquea las llamadas, las ejecuta en segunda plano
+2. Si necesitamos controlar el orden ocupamos callbacks, promises o async await.
+3. No existen los thread pero el event loop cumple una funcion parecida.
+
+// const randomResponse = statusArray[Math.floor(Math.random() * statusArray.length)];

@@ -4,13 +4,13 @@
  * no hay codigo dependiente o bloqueante.
  */
 // console.log('============== BLOQUE 1 ==============');
-console.log('1 Damos click en pagar');
-for(let i=0; i<100; i++) {
-    console.log('2 Validando pago...');
-    // Esto no es sostenible en la vida real ya que se necesita usar
-    // cosas externar como Apis, WEB Api, acceso al sistema operativo, etc
-} 
-console.log('3 Todo joya!!');
+// console.log('1 Damos click en pagar');
+// for(let i=0; i<100; i++) {
+//     console.log('2 Validando pago...');
+//     // Esto no es sostenible en la vida real ya que se necesita usar
+//     // cosas externar como Apis, WEB Api, acceso al sistema operativo, etc
+// } 
+// console.log('3 Todo joya!!');
 
 
 /**

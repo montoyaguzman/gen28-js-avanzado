@@ -84,3 +84,94 @@ JavaScript
 3. No existen los thread pero el event loop cumple una funcion parecida.
 
 // const randomResponse = statusArray[Math.floor(Math.random() * statusArray.length)];
+
+
+
+
+REQUEST
+Peticion o solicitud de informacion
+
+RESPONSE
+Un conjunto de datos que entrega el servidor al cliente + metada + headers (content-type/myme type)
+
+CLIENTE
+Solicita la informacion 
+    Ejemplos:   archivo.js, navegador, computadora
+
+SERVIDOR
+Es aquel que responde informacion o regresa la response
+    Ejemplos: Servidor de node, CPU, aplicacion live server
+
+API
+Caja que da informacion.
+Intermediario entre el front end y el back end o entre un back end y back end para solventar el problema de no tener un estandar.
+
+CONTRATO
+Reglas para consumir una API y las pone el dueño del back end.
+    Que conforma ese contrato?
+        URL 
+        METHOD / VERB http 
+        Payload/Body (la info que se envia POST)
+        Parametros (filtros)
+        Headers (autenticacion)
+
+ENDPOINTS / SERVICIOS 
+Son urls que la API pone a disposicion (con su propio verbo) para que el front end los consuma
+localhost:5501/create-user
+localhost:5501/get-users
+
+PORT
+Es una entrada a un servicio de la compu
+Listado de puertos tcp/ip
+
+REST  
+Buenas practicas de diseño de un API
+
+API REST  
+Es un api construida basandose en las buenas practicas de RESTful
+
+URL
+https://www.google.com/curso-js 
+PROTOCOLO://dominio/path
+
+
+VERBOS HTTP  
+GET
+POST - CREATE
+PUT (modificar todo) / PATCH (modificar parcialmente)
+DELETE 
+
+CRUD 
+create - post
+read - get
+update - put/patch 
+delete - delete
+
+NODE
+Emulador de JS para hacer back end / API
+
+scaffold
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

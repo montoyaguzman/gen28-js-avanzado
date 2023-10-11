@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "d4e9b68e-8593-4495-93da-ca6cae469e07",
+		"name": "my-videos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3934865"
+	},
+	"item": [
+		{
+			"name": "raiz",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/hello",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getVideos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/videos",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"videos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createVideo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Bichota\",\n    \"artist\": \"Karol G\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/create-videos",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"create-videos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

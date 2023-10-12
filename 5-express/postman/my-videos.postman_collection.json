@@ -61,6 +61,25 @@
 			"response": []
 		},
 		{
+			"name": "getVideo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/videos/3",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"videos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "createVideo",
 			"request": {
 				"method": "POST",
@@ -75,13 +94,88 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/create-videos",
+					"raw": "localhost:3000/videos",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"create-videos"
+						"videos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putVideo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Animals\",\n    \"artist\": \"Martin Garrix\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/videos/3",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"videos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "patchVideo",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Que corran\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/videos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"videos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteVideo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/videos/3",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"videos",
+						"3"
 					]
 				}
 			},

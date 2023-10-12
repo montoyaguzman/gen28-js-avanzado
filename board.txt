@@ -153,7 +153,24 @@ Emulador de JS para hacer back end / API
 scaffold
 
 
+PROYECTO ExpressJS
 
+CLASE
+
+Video
+name
+author
+
+const newVideo = new Video('Kilometros', 'Los caligaris');
+
+PARTE 1
+API - POST / GET
+Consumir desde navegador y desde postman
+
+PARTE 2
+PUT, PATCH, DELETE
+Separar el codigo (Crear el scaffold)
+Conectarnos a una BD
 
 
 

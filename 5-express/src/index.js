@@ -12,9 +12,9 @@ app.get('/hello', (req, res) => {
 });
 
 const videos = [
-    { name: 'Kilometros', artist: 'Los Caligaris' },
-    { name: 'Closer', artist: 'The Chainsmokers' },
-    { name: 'Solo a Terceros', artist: 'Panda' },
+    { id: 1, name: 'Kilometros', artist: 'Los Caligaris' },
+    { id: 2, name: 'Closer', artist: 'The Chainsmokers' },
+    { id: 3, name: 'Solo a Terceros', artist: 'Panda' },
 ];
 
 app.use(express.json());
@@ -25,6 +25,13 @@ app.get('/videos', (req, res) => {
     res.json(videos);
 });
 
+// GET ONE
+app.get('/videos/:id', (req, res) => {
+    const id = req.params.id;
+    const foundedVideo = videos.find(element => element.id === parseInt(id));
+    res.json(foundedVideo);
+});
+
 // POST: Crear un video recibido desde el request
 app.post('/videos', (req, res) => {
     console.log('req: ', req);
@@ -33,6 +40,33 @@ app.post('/videos', (req, res) => {
     videos.push(newBody);
     res.status(201).json({ message: 'todo gucci!', song: newBody.name });
 });
+
+// PUT: Modificacion del recurso completo
+app.put('/videos/:id', (req, res) => {
+    const id = req.params.id;
+    const newBody = req.body;
+    const foundedPosition = videos.findIndex(element => element.id === parseInt(id));
+    videos[foundedPosition] = newBody;
+    res.status(200).json({ id });
+});
+
+// PATCH: Modificacion parcial del recurso
+app.patch('/videos/:id', (req, res) => {
+    const id = req.params.id;
+    const newBody = req.body;
+    const foundedPosition = videos.findIndex(element => element.id === parseInt(id));
+    videos[foundedPosition] = { ...videos[foundedPosition], ...newBody };
+    res.status(200).json({ id });
+});
+
+// DELETE: Eliminar un recurso
+app.delete('/videos/:id', (req, res) => {
+    const id = req.params.id;
+    const foundedPosition = videos.findIndex(element => element.id === parseInt(id));
+    videos.splice(foundedPosition, 1);
+    res.status(200).json({ id });
+});
+
 
 app.listen(port, () => {
   console.log(`Servidor my-videos runging in ${port}`);

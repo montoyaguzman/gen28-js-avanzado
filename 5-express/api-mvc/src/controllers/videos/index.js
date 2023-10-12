@@ -1,8 +1,6 @@
-const videos = [
-    { id: 1, name: 'Kilometros', artist: 'Los Caligaris' },
-    { id: 2, name: 'Closer', artist: 'The Chainsmokers' },
-    { id: 3, name: 'Solo a Terceros', artist: 'Panda' },
-];
+const { VideosServices } = require('../../services/videos');
+
+const videosServices = new VideosServices();
 
 const getAllVideos = (req, res) => {
     res.json(videos);
@@ -13,7 +11,7 @@ const getOneVideo = (req, res) => {
     console.log(req.query.paginationKey);
     try {
         const id = req.params.id;
-        const foundedVideo = videos.find(element => element.id === parseInt(id));
+        const foundedVideo = videosServices.getById(id);
         res.json(foundedVideo);
     } catch(error) {
         res.status(500).json({ error: 'ha ocurrido un error'});

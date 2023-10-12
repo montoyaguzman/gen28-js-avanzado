@@ -5,7 +5,7 @@ const port = 3000;
 
 app.get('/', (req, res) => {
     res.send('server my-videos');
-  });
+});
 
 app.get('/hello', (req, res) => {
   res.send('<h1>Hola desde express chavos!</h1>');
@@ -15,7 +15,7 @@ const videos = [
     { name: 'Kilometros', artist: 'Los Caligaris' },
     { name: 'Closer', artist: 'The Chainsmokers' },
     { name: 'Solo a Terceros', artist: 'Panda' },
-]
+];
 
 app.use(express.json());
 app.use(cors());
@@ -31,7 +31,7 @@ app.post('/videos', (req, res) => {
     console.log('req.body: ', req.body);
     const newBody = req.body;
     videos.push(newBody);
-    res.status(404).json({ message: 'todo gucci!' });
+    res.status(201).json({ message: 'todo gucci!', song: newBody.name });
 });
 
 app.listen(port, () => {

@@ -1,0 +1,32 @@
+PROYECTO JS AVANZADO
+
+Requerimientos
+
+1. Crear un Api con ExpressJS con al menos 1 entidad con 5 atributos.
+2. La entidad debe usar los 5 verbos http (GET, POST, PUT, PATCH y DELETE).
+3. Correcta arquitectura (al menos tener un index, routes, services y controllers).
+5. Los datos podrian ser:
+     * Un array en tiempo ejecucion.
+     * Un servidor de json server.
+     * Una BD.
+6. Uso adecuado del package.json y el .gitignore.
+7. Agregar su coleccion de postman.
+8. Crear la parte front de alta y consulta.
+9. Uso de commits atómicos y convencionales.
+10. Permitido equipo 2.
+
+Deseables
+* Agregar un readme.md que explique como levantar su proyecto.
+* Seguir el tutorial para hacerlo con una BD e integrarla a su proyecto.
+* Seguir el tutorial para subirlo a vercel**.
+* Investigar sobre el uso de ambientes y variables en postman.
+
+**OPCIONES DE ENTIDADES**
+
+* Products.
+* Books.
+* Start wars.
+* Harry Potter.
+* Marvel.
+* Personajes de dragon ball/got/simpson/etc.
+* COMODIN.

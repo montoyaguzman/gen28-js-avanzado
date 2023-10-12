@@ -11,9 +11,13 @@ const getAllVideos = (req, res) => {
 const getOneVideo = (req, res) => {
     console.log(req.query.pageSize);
     console.log(req.query.paginationKey);
-    const id = req.params.id;
-    const foundedVideo = videos.find(element => element.id === parseInt(id));
-    res.json(foundedVideo);
+    try {
+        const id = req.params.id;
+        const foundedVideo = videos.find(element => element.id === parseInt(id));
+        res.json(foundedVideo);
+    } catch(error) {
+        res.status(500).json({ error: 'ha ocurrido un error'});
+    }
 };
 
 const createVideo = (req, res) => {

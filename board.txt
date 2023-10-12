@@ -112,7 +112,9 @@ Reglas para consumir una API y las pone el dueño del back end.
         URL 
         METHOD / VERB http 
         Payload/Body (la info que se envia POST)
-        Parametros (filtros)
+        Parametros (seleccion o filtros)
+            1. request params videos/2/music => sirven para seleccionar
+            2. query params videos?pageSize=10&paginationKey=2 => sirven para filtrar la info
         Headers (autenticacion)
 
 ENDPOINTS / SERVICIOS 

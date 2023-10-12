@@ -27,6 +27,8 @@ app.get('/videos', (req, res) => {
 
 // GET ONE
 app.get('/videos/:id', (req, res) => {
+    console.log(req.query.pageSize);
+    console.log(req.query.paginationKey);
     const id = req.params.id;
     const foundedVideo = videos.find(element => element.id === parseInt(id));
     res.json(foundedVideo);

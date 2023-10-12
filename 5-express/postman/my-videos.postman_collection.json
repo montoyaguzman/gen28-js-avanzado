@@ -66,14 +66,25 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/videos/3",
+					"raw": "localhost:3000/videos/3/?pageSize=10&paginationKey=2",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
 						"videos",
-						"3"
+						"3",
+						""
+					],
+					"query": [
+						{
+							"key": "pageSize",
+							"value": "10"
+						},
+						{
+							"key": "paginationKey",
+							"value": "2"
+						}
 					]
 				}
 			},

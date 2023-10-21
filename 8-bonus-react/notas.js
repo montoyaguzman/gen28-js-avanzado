@@ -61,10 +61,13 @@
     // if (obj?.adress?.street?.name)
 
 // 5. Render dinamico del html
-        // createElement, appendChild
+        // createElement, appendChild, addClassList, .style, setAttribute, getAttribute
 
-// 6. eventos
-        // addeventlister
+// 6. web api
+        // eventos
+            // addeventlister
+        // fetch
+        // 
 
 // 7. node y npm
         // scaffold
@@ -73,3 +76,4 @@
         // node_modules
 
 // reactJS
+  // web componentes

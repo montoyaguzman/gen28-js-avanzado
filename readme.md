@@ -43,7 +43,7 @@ Node es un entorno multiplataforma para ejecutar JavaScript fuera del navegador,
 node -v
 npm -v
 
-**Versiones válidas:** 12.x.x, 14.x.x y 16.x.x
+**Versiones válidas:** 16.x.y ó 18.x.y
 
 #### **Que se puede hacer con node**
 
@@ -207,7 +207,6 @@ A continuación se presenta un listado de los framework front y back mas popular
 * [Gatsby](https://www.gatsbyjs.com/docs/).
 * [EJS](https://ejs.co/#docs).
 * [Nuxt](https://nuxtjs.org/docs/get-started/installation).
-* [Next](https://nextjs.org/docs).
 * [Hbs](https://bluuweb.github.io/node/20-hbs/).
 
 #### **Semantic Versión**
@@ -456,11 +455,8 @@ src
 └───test            # Tests go here
 ```
 
-Documentación capa controller.
 
-Documentación de arquitectura node.
-
-**Nombrado de constantes**
+**Notas:** Siempre se sugiere usar constantes en sus proyectos, en casos como:
 
 1. Si la constante es un valor fijo para comparar (if) o mostrar en pantalla
    debe ir en mayuscula.
@@ -471,13 +467,14 @@ Documentación de arquitectura node.
 
 ### Deploys.
 
+* Vercel.
+* Fly.io
 * Heroku.
 * Google App Engine.
 * Back4App.
 * Linode.
 * Digital Ocean.
 * Aws.
-
 
 ### Proyecto del módulo
 
